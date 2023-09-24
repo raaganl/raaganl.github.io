@@ -1,7 +1,7 @@
 /* Reset some default styles to ensure consistent rendering across browsers */
 body, h1, h2, p, ul, li, form {
     margin: 0;
-    padding: 0;
+    padding:0;
 }
 
 body {
@@ -60,7 +60,7 @@ ul {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     background-color: #007bff;
     color: #fff;
     position: absolute;
