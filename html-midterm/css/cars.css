@@ -14,12 +14,6 @@ body {
     padding: 20px;
 }
 
-header {
-    background-color: #007bff;
-    padding: 10px;
-    color: #fff;
-}
-
 header h1 {
     margin: 0;
     font-size: 32px;
@@ -37,7 +31,7 @@ nav li {
 
 nav li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 
 nav li a:hover {
