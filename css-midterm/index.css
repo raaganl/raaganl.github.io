@@ -28,19 +28,17 @@ body{
 }
 #introImage{
     padding-left:10%;
+    padding-right: 2%;
     padding-bottom: 1%;
-    width: 40%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    max-width: 100%;
+    width: 30%;
+    
 }
 #intro{
     color:rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
     font-size: large;
-    padding-left: 2.5%;
-    padding-bottom: 1%;
     padding-right: 10%;
+    padding-bottom: 1%;
     float:left;
     line-height: 150%;
     font-weight: 200;
@@ -72,15 +70,39 @@ body{
     line-height: 150%;
     font-weight: lighter;
 }
-@media screen and (max-width: 400px){
-    body{
-        background-color: aqua;
-    }
+@media  screen and (max-width: 400px){
     #title{
-        text-align: left;
-        text-wrap:wrap;
+        text-align: left; 
     }
     #flexContainer{
         flex-direction: column;
+        text-align: center;
+    }
+    #introImage{
+        width: 70%;
+        padding:5%;
+    }
+    #intro{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  }
+  @media only screen and (min-width: 1500px){
+    #introImage{
+        width: 50%;
+        padding-left:2%;
+    }
+    #intro{
+        font-size: x-large;
+        padding-right: 2%;
+    }
+    .showArtists{
+        font-size: large;
+    }
+    .showTitle{
+        font-size: x-large;
+    }
+    .showInfo{
+        font-size: large;
     }
   }
