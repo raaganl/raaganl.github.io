@@ -9,7 +9,7 @@ hr{
     color:rgb(255, 255, 255);
     font-weight: normal;
 }
-#titleDivide{
+.titleDivide{
     height: 0.03em;
     color:white;
     background-color: white;
