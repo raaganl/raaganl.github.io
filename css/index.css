@@ -1,0 +1,86 @@
+hr{
+    width:85%;
+    color:antiquewhite;
+}
+#title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:relative;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight: normal;
+}
+#titleDivide{
+    height: 0.03em;
+    color:white;
+    background-color: white;
+    width:100%
+}
+#titleBox{
+    margin: 2em;
+}
+body{
+    background-color:rgb(16, 16, 16);
+}
+#flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#introImage{
+    padding-left:10%;
+    padding-bottom: 1%;
+    width: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 100%;
+}
+#intro{
+    color:rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    font-size: large;
+    padding-left: 2.5%;
+    padding-bottom: 1%;
+    padding-right: 10%;
+    float:left;
+    line-height: 150%;
+    font-weight: 200;
+}
+.showTitle{
+    color:rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    margin-left: 15%;
+}
+.showDates{
+    color:rgb(183, 123, 80);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 15%;
+}
+.showInfo{
+    margin-left: 20%;
+    margin-right: 15%;
+    color:rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    line-height: 150%;
+    font-weight: 300;
+}
+.showArtists{
+    color:rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20%;
+    margin-right: 40%;
+    line-height: 150%;
+    font-weight: lighter;
+}
+@media screen and (max-width: 400px){
+    body{
+        background-color: aqua;
+    }
+    #title{
+        text-align: left;
+        text-wrap:wrap;
+    }
+    #flexContainer{
+        flex-direction: column;
+    }
+  }
