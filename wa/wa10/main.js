@@ -8,7 +8,7 @@ function randomValueFromArray(array){
 }
 
 var storyText = "It was 30 fahrenheit outside, and :insertx: was going out to a Halloween party. When they got to :inserty: all seemed well, and the party was going great! That is, until :insertz:. Bob heard a commotion and went over to where people were crowing around. At first it was entertaining, but they decided to leave after :insertx: knocked over a 300 pound statue.";
-var insertX = ["Willy Wonka", "Fantastic Mr Fox", "Matilda"];
+var insertX = ["Willy Wonka", "Fantastic Mr. Fox", "Matilda"];
 var insertY = ["the Frat", "the house","the sewer"];
 var insertZ = ["the oompa loompas crashed the party", "Boggis, Bunce, and Bean showed up and ruined the vibe", "Trunchbull started doing the worm"];
 
