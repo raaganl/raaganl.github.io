@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type = "button">Click Me!!</button>
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener('click', exclaimBoo);
+
+        function exclaimBoo(){
+            button.textContent = 'Boo!';
+        }
+    </script>
+    <text type = "text1">Click me 2!!</text>
+    <script>
+        const text1 = document.querySelector("text");
+        text1.addEventListener('click', phoneGuy);
+
+        function phoneGuy(){
+            text1.textContent = 'Hello? Hello hello!';
+        }
+    </script>
+</body>
+</html>
