@@ -14,6 +14,8 @@ var insertZ = ["the oompa loompas crashed the party", "Boggis, Bunce, and Bean s
 
 randomize.addEventListener('click', result);
 
+
+
 function result() {
     var newStory = storyText;
     var xItem = randomValueFromArray(insertX);
