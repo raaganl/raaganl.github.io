@@ -1,5 +1,5 @@
 const newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
-const othrBtn = document.querySelector('#js-tweet').addEventListener('click',);
+const othrBtn = document.querySelector('#js-tweet').addEventListener('click',getQuote);
 
 var endPoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
@@ -11,6 +11,7 @@ async function getQuote(){
         }
         const json = await response.json();
         displayQuote(json['question']);
+        getAnswer(json['answer']);
 
     }
     catch(err){
@@ -22,6 +23,7 @@ async function getQuote(){
 function displayQuote(question){
     const questionText = document.querySelector('#js-quote-text');
     questionText.textContent = question;
+    
 
 }
 
