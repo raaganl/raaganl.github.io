@@ -5,14 +5,14 @@ let greater = document.querySelector("#greater").addEventListener('click',functi
 let yes = document.querySelector("#yes").addEventListener('click',function(){updateNumber("yes")});
 let currnum = 0;
 let numberSent = false;
-let numberRange = [1000000000,9999999999];
+let numberRange = [1000000000,10000000000];
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
 function inital(){
-    numberRange = [1000000000,9999999999];
+    numberRange = [1000000000,10000000000];
     numberSent = false;
     currnum = randomNumber(numberRange[0],numberRange[1]);
     number.textContent = currnum;
