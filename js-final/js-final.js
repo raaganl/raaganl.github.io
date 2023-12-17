@@ -6,20 +6,29 @@ let yes = document.querySelector("#yes").addEventListener('click',function(){upd
 let currnum = 0;
 let numberSent = false;
 let numberRange = [1000000000,10000000000];
+let count = 0;
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
-
+let countLimit = randomNumber(35,60);
 function inital(){
     numberRange = [1000000000,10000000000];
     numberSent = false;
     currnum = randomNumber(numberRange[0],numberRange[1]);
     number.textContent = currnum;
     number.style.fontSize = "30px"
+    count = 0;
+    countLimit = randomNumber(35,60);
+    
 }
 
 function updateNumber(buttonClicked){
+    count+=1;
+    if(count >= countLimit){
+        number.textContent = "I give up! Try Again.";
+        numberSent = true;
+    }
     if(buttonClicked == "less" && numberSent == false){
         numberRange[0] = currnum;
         currnum = randomNumber(numberRange[0],numberRange[1]);
@@ -30,7 +39,7 @@ function updateNumber(buttonClicked){
         currnum = randomNumber(numberRange[0],numberRange[1]);
         number.textContent = currnum;
     }
-    if(buttonClicked == "yes"){
+    if(buttonClicked == "yes" && count<countLimit){
         number.textContent = "Phone number submitted!";
         numberSent = true;
     }
