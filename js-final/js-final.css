@@ -23,6 +23,9 @@
 .buttons:hover, #restart:hover{
     background-color: rgb(33, 6, 115);
 }
+#timer{
+    color: rgb(180, 26, 26);
+}
 #currentPhone{
     padding: 5%;
     margin: 2%;
