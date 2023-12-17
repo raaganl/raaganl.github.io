@@ -6,7 +6,7 @@ let yes = document.querySelector("#yes").addEventListener('click',function(){upd
 let currnum = 0;
 let numberSent = false;
 let numberRange = [1000000000,10000000000];
-let timer = 60;
+let timer = 45;
 let outTime =false;
 let timerId; 
 
@@ -20,7 +20,7 @@ function inital(){
     currnum = randomNumber(numberRange[0],numberRange[1]);
     number.textContent = currnum;
     number.style.fontSize = "30px"
-    timer = 60;
+    timer = 45;
     clearInterval(timerId);
     timerId = setInterval(updateTimer,1000);
     
