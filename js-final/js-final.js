@@ -29,6 +29,7 @@ function updateTimer(){
     timer--;
     if(timer <= 0 || numberSent == true){
         outTime = true;
+        numberSent = true;
         clearInterval(timerId);
         number.textContent = "Phone number submitted!";
     }
