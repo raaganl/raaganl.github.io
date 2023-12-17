@@ -6,29 +6,36 @@ let yes = document.querySelector("#yes").addEventListener('click',function(){upd
 let currnum = 0;
 let numberSent = false;
 let numberRange = [1000000000,10000000000];
-let count = 0;
+let timer = 60;
+let outTime =false;
+let timerId; 
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
-let countLimit = randomNumber(35,60);
 function inital(){
+    
     numberRange = [1000000000,10000000000];
     numberSent = false;
     currnum = randomNumber(numberRange[0],numberRange[1]);
     number.textContent = currnum;
     number.style.fontSize = "30px"
-    count = 0;
-    countLimit = randomNumber(35,60);
+    timer = 60;
+    clearInterval(timerId);
+    timerId = setInterval(updateTimer,1000);
     
 }
-
-function updateNumber(buttonClicked){
-    count+=1;
-    if(count >= countLimit){
-        number.textContent = "I give up! Try Again.";
-        numberSent = true;
+function updateTimer(){
+    timer--;
+    if(timer <= 0 || numberSent == true){
+        outTime = true;
+        clearInterval(timerId);
+        number.textContent = "Phone number submitted!";
     }
+    let time = document.getElementById("timer");
+    time.textContent = timer;
+}
+function updateNumber(buttonClicked){
     if(buttonClicked == "less" && numberSent == false){
         numberRange[0] = currnum;
         currnum = randomNumber(numberRange[0],numberRange[1]);
@@ -39,7 +46,7 @@ function updateNumber(buttonClicked){
         currnum = randomNumber(numberRange[0],numberRange[1]);
         number.textContent = currnum;
     }
-    if(buttonClicked == "yes" && count<countLimit){
+    if(buttonClicked == "yes"){
         number.textContent = "Phone number submitted!";
         numberSent = true;
     }
