@@ -2,65 +2,84 @@
 body{
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.header{
+    position: sticky;
+    background-color: #847CFF;
 }
 .navbar{
-    position: sticky;
-    top: 10%;
-    width: 100%;
+    float: none;
     height: 3rem;
-    background-color: #c1c9ef;
-    align-content:center;
+    text-align: center;
     a{
         text-decoration: none;
-        padding: 10px;
+        padding: 5%;
         font-family: Verdana, Tahoma, sans-serif;
         font-size: 1.5rem;
-        font-weight:2rem;
+        font-weight:bolder;
+        color:#ffffff
     }
 }
 .headBar{
-    top: 0;
-    padding: .5rem;
     #name{
-        font-family:'Helvetica Neue', sans-serif;
-        font-weight:1rem;
+        font-family: "Pixelify Sans", sans-serif;;
+        font-weight:bolder;
         font-style:oblique;
-        font-size: 2.5rem;
+        font-size: 3.2rem;
+        letter-spacing: .2rem;
         color:#11058F;
         display: inline;
+        margin-left: 2%;
 
     }
     .socials{
-        font-size: 2rem;
-        position: sticky;
+        font-size: 2.5rem;
         float: right;
-        margin: 10px;
-        vertical-align: text-bottom;
+        color: #ffffff;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+    a:hover{
+        color:#11058F;
     }
 }
 
 a{
-    color: #665BFF;
+    color: #3729C6;
 }
 a:hover{
-    color:#3729C6;
+    color:#11058F;
+}
+.pageHeading{
+    font-size: 2rem;
+    margin-left: 3%;
+    background-color: #DCDCDC;;
+    margin-left: 0%;
+    padding-left:3%;
+    width: 30%;
+    text-align: center;
 }
 
-/*Index Only */
-#intro{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
-}
+/*About Me Only */
 #introBlurb{
-    padding: 3%;
+    font-size: 1.5rem;
+    margin-right: 5%;
 }
 .picture-text-container{
     display: flex;
-    justify-content: space-evenly;
+    align-items:center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -3%;
 }
 #headshotRagan{
-    width: 300px;
-    float: right;
-    border-radius: 70%;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1rem solid #DCDCDC;
 }
