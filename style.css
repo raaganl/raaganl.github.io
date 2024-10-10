@@ -1,14 +1,13 @@
 /*Website Overview*/
 body{
-    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0%;
+    margin-top: 1%;
     margin-left: 0%;
     margin-right: 0%;
+    background-image: linear-gradient(#252054,#0b0326);
 }
 .header{
     position: sticky;
-    background-color: #847CFF;
 }
 .navbar{
     float: none;
@@ -18,9 +17,12 @@ body{
         text-decoration: none;
         padding: 5%;
         font-family: Verdana, Tahoma, sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight:bolder;
-        color:#ffffff
+        color:#ffffff;
+    }
+    a:hover{
+        color:#dffb62;
     }
 }
 .headBar{
@@ -28,9 +30,9 @@ body{
         font-family: "Pixelify Sans", sans-serif;;
         font-weight:bolder;
         font-style:oblique;
-        font-size: 3.2rem;
+        font-size: 3.5rem;
         letter-spacing: .2rem;
-        color:#11058F;
+        color:#9189FF;
         display: inline;
         margin-left: 2%;
 
@@ -38,35 +40,38 @@ body{
     .socials{
         font-size: 2.5rem;
         float: right;
-        color: #ffffff;
+        color: #9189FF;
         margin-right: 2%;
         margin-top: 1%;
     }
     a:hover{
-        color:#11058F;
+        color:#ffffff;
+        font-size: 2.6rem;
     }
 }
 
 a{
-    color: #3729C6;
+    color: white;
 }
 a:hover{
-    color:#11058F;
+    color: white;
 }
 .pageHeading{
-    font-size: 2rem;
-    margin-left: 3%;
-    background-color: #DCDCDC;;
-    margin-left: 0%;
-    padding-left:3%;
-    width: 30%;
+    font-size: 1.8rem;
+    color:#dffb62;
+    margin-left: 10%;
+    padding-right: 3%;
+    margin-top: 2%;
+    width:fit-content;
     text-align: center;
 }
 
-/*About Me Only */
+/*Index */
 #introBlurb{
     font-size: 1.5rem;
-    margin-right: 5%;
+    margin-right: 7%;
+    font-weight:bold;
+    color:#ffffff;
 }
 .picture-text-container{
     display: flex;
@@ -74,12 +79,57 @@ a:hover{
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: -3%;
+    margin-top: -5%;
+    margin-bottom: 10%;
 }
 #headshotRagan{
-    width: 450px;
-    height: 450px;
+    width: 420px;
+    height: 420px;
     object-fit: cover;
     border-radius: 50%;
-    border: 1rem solid #DCDCDC;
+}
+.cardFlexBox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.card{
+    background-color: #ffffff;
+    width: 400px;
+    height: 450px;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+.card:hover{
+    background-color: #9189FF;
+    width: 405px;
+    height: 455px;
+    .cardHeader{
+        color:#ffffff;
+        font-size: 1.5rem;
+    }
+    .cardDescription{
+        color:#ffffff;
+    }
+}
+.cardTextContainer{
+    padding:2%;
+}
+.cardImg{
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+.cardHeader{
+    color:#9189FF;
+    font-size: 1.5rem;
+}
+.cardDescription{
+    color:#666666;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
 }
