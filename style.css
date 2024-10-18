@@ -5,6 +5,7 @@ body{
     margin-left: 0%;
     margin-right: 0%;
     background-image: linear-gradient(#252054,#0b0326);
+    color:#ffffff;
 }
 .header{
     position: sticky;
@@ -15,7 +16,7 @@ body{
     text-align: center;
     a{
         text-decoration: none;
-        padding: 5%;
+        margin: 5%;
         font-family: Verdana, Tahoma, sans-serif;
         font-size: 1.7rem;
         font-weight:bolder;
@@ -57,13 +58,21 @@ a:hover{
     color: white;
 }
 .pageHeading{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color:#dffb62;
     margin-left: 10%;
-    padding-right: 3%;
-    margin-top: 2%;
-    width:fit-content;
-    text-align: center;
+    margin-top: 1%;
+    display: flex;
+}
+.Back{
+    margin-left: 5%;
+    font-size: 1.5rem;
+    background-color: #9189FF;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    text-decoration: none;
 }
 
 /*Index */
@@ -88,6 +97,8 @@ a:hover{
     object-fit: cover;
     border-radius: 50%;
 }
+
+/*Projects*/
 .cardFlexBox{
     display: flex;
     justify-content: space-evenly;
@@ -132,4 +143,21 @@ a:hover{
     font-size: 1.2rem;
     font-weight: bold;
     
+}
+.WipImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 10%;
+}
+.pdf {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.pdf, html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
