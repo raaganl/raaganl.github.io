@@ -13,7 +13,7 @@ body{
 .navbar{
     float: none;
     height: 3rem;
-    text-align: left;
+    text-align: center;
     a{
         text-decoration: none;
         margin: 5%;
@@ -58,10 +58,10 @@ a:hover{
     color: white;
 }
 .pageHeading{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color:#dffb62;
-    margin-left: 10%;
-    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
 }
 .Back{
@@ -198,6 +198,40 @@ a:hover{
     align-items: center;
 
 }
+.artworkContainer{
+    display:flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+}
+.miniArtworkContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+#mtnStillLife{
+    width: 300px;
+    height:fit-content;
+
+}
+#birds{
+    width:500px;
+    height:fit-content;
+}
+#fish{
+    width:500px;
+    height:fit-content;
+}
+#rasberries{
+    width:500px;
+    height:fit-content;
+}
+#theTree{
+    width: 400px;
+    height:fit-content;
+
+}
 
 
 
@@ -210,6 +244,7 @@ a:hover{
         display: flex;
         flex-direction: column;
         margin-bottom: 20%;
+        text-align: left;
         a{
             text-decoration: none;
             margin: 2%;
@@ -246,7 +281,7 @@ a:hover{
         }
         a:hover{
             color:#ffffff;
-            font-size: 2.6rem;
+            font-size: 2.1rem;
         }
     }
     
@@ -257,14 +292,14 @@ a:hover{
         color: white;
     }
     .pageHeading{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         color:#dffb62;
         margin-left: 10%;
-        margin-top: 1%;
         display: flex;
     }
     .Back{
         margin-left: 5%;
+        margin-top: 1;
         font-size: 1.5rem;
         background-color: #9189FF;
         padding-left: 1%;
@@ -351,7 +386,7 @@ a:hover{
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      width: 70%;
       margin-bottom: 10%;
     }
     .card2{
