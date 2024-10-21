@@ -7,6 +7,7 @@ body{
     background-image: linear-gradient(#252054,#0b0326);
     color:#ffffff;
 }
+
 .header{
     position: sticky;
 }
@@ -67,12 +68,17 @@ a:hover{
 .Back{
     margin-left: 5%;
     font-size: 1.5rem;
-    background-color: #9189FF;
+    background-color:#9189FF;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: .5%;
     padding-bottom: .5%;
     text-decoration: none;
+    position:relative;
+}
+.Back:hover{
+    background-color: white;
+    color:#666666
 }
 
 /*Index */
@@ -88,7 +94,6 @@ a:hover{
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: -5%;
     margin-bottom: 10%;
 }
 #headshotRagan{
@@ -200,37 +205,43 @@ a:hover{
 }
 .artworkContainer{
     display:flex;
-    flex-direction: row;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-.miniArtworkContainer{
-    display:flex;
+.artworkCol{
+    display: flex;
     flex-direction: column;
+    margin: 2%;
+}
+.artworkCard{
+    font-size: large;
+    margin: 5%;
 }
 
 #mtnStillLife{
     width: 300px;
-    height:fit-content;
+    height:auto;
 
 }
 #birds{
     width:500px;
-    height:fit-content;
+    height:auto;
 }
 #fish{
     width:500px;
-    height:fit-content;
+    height:auto;
 }
 #rasberries{
     width:500px;
-    height:fit-content;
+    height:auto;
 }
 #theTree{
     width: 400px;
-    height:fit-content;
+    height:auto;
 
+}
+#openSkies{
+    width: 400px;
+    height:auto;
 }
 
 
@@ -243,7 +254,7 @@ a:hover{
         height: 2rem;
         display: flex;
         flex-direction: column;
-        margin-bottom: 20%;
+        margin-bottom: 25%;
         text-align: left;
         a{
             text-decoration: none;
@@ -297,17 +308,6 @@ a:hover{
         margin-left: 10%;
         display: flex;
     }
-    .Back{
-        margin-left: 5%;
-        margin-top: 1;
-        font-size: 1.5rem;
-        background-color: #9189FF;
-        padding-left: 1%;
-        padding-right: 1%;
-        padding-top: .5%;
-        padding-bottom: .5%;
-        text-decoration: none;
-    }
     
     /*Index */
     #introBlurb{
@@ -324,7 +324,6 @@ a:hover{
         justify-content: center;
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: -5%;
         margin-bottom: 10%;
     }
     #headshotRagan{
@@ -436,4 +435,38 @@ a:hover{
         align-items: center;
     
     }
+    .artworkContainer{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .artworkCol{
+        display:flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #birds{
+        width:500px;
+        height:auto;
+    }
+    #fish{
+        width:500px;
+        height:auto;
+    }
+    #rasberries{
+        width:500px;
+        height:auto;
+    }
+    #theTree{
+        width: 400px;
+        height:auto;
+    
+    }
+    #openSkies{
+        width: 400px;
+        height:auto;
+    }
+    
+    
 }
