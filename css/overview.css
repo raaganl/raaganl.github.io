@@ -1,0 +1,125 @@
+/*Website Overview*/
+html {
+    scroll-behavior:smooth;
+  }
+body{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Lato',sans-serif;
+    margin-top: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #2D313D;
+    color:#ffffff;
+}
+h1{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+h1{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+p{
+    font-weight:lighter;
+    font-size: 1.2rem;
+}
+#bluebellBackground{
+    background-image: url('/img/bluebellBackground.jpg');
+    max-width: 1920px;
+    height:2049px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header{
+    width:100%;
+    background-color: rgba(81, 98, 214, .9);
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
+.navbar{
+    float: none;
+    height: fit-content;
+    text-align: center;
+    padding-bottom:1rem;
+    a{
+        text-decoration: none;
+        margin: 5%;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: 1.7rem;
+        font-weight:lighter;
+        color:#CDD5FF;
+        transition: .3s ease;
+    }
+    a:hover{
+        color:#00e1ff;
+    }
+}
+.headBar{
+    #name{
+        font-family: "Pixelify Sans", sans-serif;;
+        font-weight:bolder;
+        font-style:oblique;
+        font-size: 3.5rem;
+        letter-spacing: .2rem;
+        color:#CDD5FF;
+        display: inline;
+        margin-left: 2%;
+
+    }
+    .socials{
+        font-size: 2.2rem;
+        float: right;
+        color: #CDD5FF;
+        margin-right: 2%;
+        margin-top: 2%;
+        transition: color .2s ease, font-size .2s ease;
+
+    }
+    a:hover{
+        color:#00e1ff;
+        font-size: 2.6rem;
+    }
+}
+#codingSection{
+    padding:10rem;
+}
+#uxuiSection{
+    padding:10rem;
+}
+#artSection{
+    padding:10rem;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+.pageHeading{
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    color:#CDD5FF;
+    margin-left: 2%;
+    margin-right: 5%;
+    display: flex;
+}
+.Back{
+    margin-left: 5%;
+    font-size: 1.5rem;
+    background-color:#00e1ff;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    text-decoration: none;
+    position:relative;
+}
+.Back:hover{
+    background-color: white;
+    color:#666666
+}
