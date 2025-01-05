@@ -44,7 +44,7 @@
 }
 .uxCardHeader{
     color:#edeeff;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
     transition-delay: .2s;
@@ -67,4 +67,33 @@
   margin-right: auto;
   width: 50%;
   margin-bottom: 10%;
+}
+.uxProjectDescription{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.uxMockupContainer{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content:space-evenly;
+}
+.uxImageContainer{
+    padding:.5rem;
+    max-width:100%;
+    height:auto;
+    text-align: center;
+    p{
+        margin-top: -.1rem;
+    }
+}
+.orionImage{
+    width:250px;
+}
+.whiteboardImage{
+    width: 500px;
 }

@@ -21,6 +21,3 @@ for(let i = 0; i < uxCards.length; i++){
     })
 }
 
-
-
-
