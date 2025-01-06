@@ -1,0 +1,258 @@
+/*Website Overview*/
+html {
+    scroll-behavior:smooth;
+  }
+body{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Lato',sans-serif;
+    margin-top: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #2D313D;
+    color:#edeeff;
+    letter-spacing: .05rem;
+}
+h1{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+p{
+    font-weight:lighter;
+    font-size: 1.2rem;
+}
+#bluebellBackground{
+    background-image: url('/img/bluebellBackground.jpg');
+    max-width: 1920px;
+    height:2049px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header{
+    width:100%;
+    background-color: rgba(81, 98, 214, .9);
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
+.navbarPC{
+    float: none;
+    height: fit-content;
+    text-align: center;
+    padding-bottom:1rem;
+    width:100%;
+    a{
+        text-decoration: none;
+        margin: 5%;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: 1.7rem;
+        font-weight:lighter;
+        color:#c3c6ff;
+        transition: color .5s ease;
+    }
+    a:hover{
+        color:#edeeff;
+    }
+}
+.headBar{
+    margin-right: 2%;
+    margin-left: 2%;
+    #name{
+        font-family: "Pixelify Sans", sans-serif;;
+        font-weight:bolder;
+        font-style:oblique;
+        font-size: 3.2rem;
+        letter-spacing: .2rem;
+        color:#c3c6ff;;
+        display: inline;
+
+    }
+    .socials{
+        font-size: 2.1rem;
+        float: right;
+        color: #c3c6ff;
+        margin-top: 1%;
+        margin-left:1rem;
+        margin-bottom: -1%;
+        transition: color .5s ease, transform .3s ease;
+
+    }
+    a:hover{
+        color:#edeeff;
+        transform: scale(1.1);
+    }
+}
+#codingSection{
+    padding:7rem;
+}
+#uxuiSection{
+    padding:7rem;
+}
+#artSection{
+    padding:7rem;
+}
+a{
+    color: #edeeff;
+}
+a:hover{
+    color: #edeeff;
+}
+.pageHeading{
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    color:#c3c6ff;
+    margin-left: 2%;
+    margin-right: 5%;
+    display: flex;
+}
+.Back{
+    box-shadow: 0px 6px 26px -8px rgba(0,0,0,0.49);
+    width:fit-content;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 5%;
+    margin-top:10%;
+    font-size: 1.5rem;
+    background-color:#edeeff;
+    color:rgba(81, 98, 214, 1);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    text-decoration: none;
+    position:relative;
+    transition: .3s ease;
+}
+.Back:hover{
+    background-color:#ffffff;
+    color:rgba(81, 98, 214, 1);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.sectionBreak{
+    border: 2px solid #91a3ff;
+}
+.pageHeading2{
+    align-self: center;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: -3rem;
+    font-size: 1.8rem;
+    color:#c3c6ff;
+    max-width: fit-content;
+}
+@media only screen and (max-width: 1000px){
+    .headBar{
+        margin-right: 2%;
+        margin-left: 2%;
+        #name{
+            font-size: 3rem;
+    
+        }
+        .socials{
+            font-size: 2.1rem;
+    
+        }
+        a:hover{
+            color:#edeeff;
+            transform: scale(1.1);
+        }
+    }
+    .navbarPC{
+    a{
+        font-size: 1.7rem;
+    }
+    a:hover{
+        color:#edeeff;
+    }
+}
+    
+}
+@media only screen and (max-width: 800px){
+    .headBar{
+        margin-right: 2%;
+        margin-left: 2%;
+        #name{
+            font-size: 2.5rem;
+        }
+        .socials{
+            font-size: 1.8rem;
+        }
+        a:hover{
+            color:#edeeff;
+            transform: scale(1.1);
+        }
+    }
+    .navbarPC{
+        float: none;
+        height: fit-content;
+        text-align: center;
+        padding-bottom:1rem;
+        a{
+            font-size: 1.5rem;
+
+        }
+    }
+   
+}
+
+@media only screen and (max-width: 600px){
+    .headBar{
+        margin-right: 2%;
+        margin-left: 2%;
+        #name{
+            font-size: 2rem;
+        }
+        .socials{
+            font-size: 1.5rem;
+        }
+        a:hover{
+            color:#edeeff;
+            transform: scale(1.1);
+        }
+    }
+    .navbarPC{
+        a{
+            font-size: 1.2rem;
+        }
+    }
+    #bluebellBackground{
+        background-image: url('/img/bluebellBackground.jpg');
+        background-size: contain;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .headBar{
+        margin-right: 2%;
+        margin-left: 2%;
+        #name{
+            font-size: 1.5rem;
+        }
+        .socials{
+            font-size: 1.2rem;
+        }
+        a:hover{
+            color:#edeeff;
+            transform: scale(1.1);
+        }
+    }
+    .navbarPC{
+        a{
+            font-size: 1.2rem;
+        }
+    }
+   
+}
+
+

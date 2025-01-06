@@ -1,0 +1,72 @@
+/*Projects*/
+
+.cardFlexBox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.card{
+    background-color: rgba(81, 98, 214, 1);
+    width: 400px;
+    height: 500px;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+.card:hover{
+    background-color: rgba(81, 98, 214, 1);
+    width: 405px;
+    height: 505px;
+    .cardImg{
+        opacity: 1;
+    }
+    .cardHeader{
+        color:#edeeff;
+        font-size: 1.5rem;
+    }
+    .cardDescription{
+        display:block;
+        opacity: 1; 
+        visibility: visible;
+        transition: opacity 0.5s ease-in-out, visibility 0s 0s;
+    }
+}
+.cardTextContainer{
+    padding:2%;
+}
+.cardImg{
+    opacity: .8;
+    object-fit:cover;
+    width: 100%;
+    height: 70%;
+    transition: .5s ease-in-out;
+}
+.cardHeader{
+    color:#edeeff;
+    font-size: 2.2rem;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    transition-delay: .2s;
+}
+.cardDescription{
+    color:#edeeff;
+    font-size: 1.2rem;
+    font-weight: normal;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s .5s; 
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    
+}
+.WipImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 10%;
+}

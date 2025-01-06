@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ragan Lee</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/overview.css" />
+        <link rel="stylesheet" type="text/css" href="/css/artwork.css" />
+        <link rel="stylesheet" type="text/css" href="/css/projects.css" />
+        <link rel="stylesheet" type="text/css" href="/css/home.css" />
+        <link rel="stylesheet" type="text/css" href="/css/uxui.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,32 +17,96 @@
         
     </head>
     <body>
-        <div class = "header">
-            <div class = "headBar">
-                <h1 id = "name">RWL</h1>
-                <a class = "socials" href="https://github.com/raaganl"><i class="fab fa-github"></i></a>
-                <a class = "socials" href="https://www.linkedin.com/in/ragan-lee-55a135276/"><i class="fab fa-linkedin"></i></a>
-            </div> 
-            <nav class = "navbar">
-                <a href="index.html">Home</a>
-                <a href = "portfolio.html">Programming</a>
-                <a href="artwork.html">Art and Design</a>
-            </nav>
-        </div>
-        <div class = "pageHeading">
-            <h2>Hi There!</h2>
-        </div>
-        
-        <div class = "picture-text-container">
-            <div id = introBlurb>
-            <p>I'm an engineering student at CU Boulder currently pursuing a BS in Computer Science and a minor in Creative Technology and Design.
-            </p>
-            <p>
-                I enjoy both the technical and design aspects of programming, and my interests encompass UX/UI, game development, HCI, and backend software development (and I'm actively seeking opportunities in these areas!).</p>
+        <div id = "bluebellBackground">
+            <div class = "header">
+                <div class = "headBar">
+                    <h1 id = "name">RWL</h1>
+                    <a class = "socials" href="https://github.com/raaganl"><i class="fab fa-github"></i></a>
+                    <a class = "socials" href="https://www.linkedin.com/in/ragan-lee-55a135276/"><i class="fab fa-linkedin"></i></a>
+                </div> 
+                <nav class = "navbarPC">
+                    <a href="#bluebellBackground">Home</a>
+                    <a href = "#codingSection">Programming</a>
+                    <a href="#uxuiSection">UX/UI</a>
+                    <a href="#artSection">Art</a>
+                </nav>
             </div>
-            <img id = "headshotRagan" src = "img/headshot.jpg" alt="A photo of Ragan Lee (me!)">
-        </div>   
+            <section id = "introSection">
+            
+                <div class = "picture-text-container">
+                    <h1 id = "introHeader">Hi there, I'm Ragan!
+                    </h1>
+                    <img id = "headshotRagan" src = "img/headshot.jpg" alt="A photo of Ragan Lee (me!)">
+                    <p id = "introBlurb">I'm an engineering student at CU Boulder currently pursuing a BS in Computer Science and a minor in Creative Technology and Design.
+                        My interests encompass UX/UI, game development, HCI, and backend software development.
+                    </p>
+                </div>   
 
+            </section>
+        </div>
+        <section id = "codingSection">
+            <hr class = "sectionBreak">
+            <div class = "pageHeading">
+                <h2 id = "codingProjectsPage">Projects</h2>
+            </div>
+            <div class = "cardFlexBox">
+                <div class = "card" id = "cardHerd">
+                    <img class = "cardImg" src="img/cliffSide.jpg" alt = "a pixel art image of an ocean-side mountain with a little house on the cliff">
+                    <div class = "cardTextContainer">
+                        <h2 class = "cardHeader">Herd</h2>
+                        <p class = "cardDescription">A small, experimental game.</p>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+        <section id = "uxuiSection">
+            <hr class = "sectionBreak">
+            <div class = "pageHeading">
+                <h2 id = "#UXUIPage">UX/UI</h2>
+            </div>
+           <div class = "cardFlexBox">
+                <div class = "uxCard" id = "cardWhiteboard">
+                    <img class = "uxCardImg" src="img/uxui/whiteboardLogo.jpg" alt = "a logo containing a lightbulb">
+                    <div class = "uxCardTextContainer">
+                        <h2 class = "uxCardHeader">Whiteboard</h2>
+                        <p class = "uxCardDescription">A project collaboration application</p>
+                    </div>
+            
+                </div>
+                <div class = "uxCard" id = "cardOrion">
+                    <img class = "uxCardImg" src="img/uxui/orionLogo.jpg" alt = "a logo containing a lightbulb">
+                    <div class = "uxCardTextContainer">
+                        <h2 class = "uxCardHeader">Orion</h2>
+                        <p class = "uxCardDescription">A saftey app geared towards college age individuals</p>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+        <section id = "artSection">
+            <hr class = "sectionBreak">
+            <div class = "pageHeading">
+                <h2 id = "artPage">Art</h2>
+            </div>
+            <div class = "card2FlexBox">
+                <div class = "card2" id = "cardPaintings">
+                    <img class = "card2Img" src="img/artwork/birds_cropped.jpg" alt = "a painting of two birds sitting on a branch together">
+                    <div class = "card2TextContainer">
+                        <h2 class = "card2Header">Paintings</h2>
+                    </div>
+            
+                </div>
+                <div class = "card2" id = "cardDnD">
+                    <img class = "card2Img" src="img/artwork/a_minor_delay_cropped.jpg" alt = "a scene from a DND campaign">
+                    <div class = "card2TextContainer">
+                        <h2 class = "card2Header">Dungeons and Dragons</h2>
+                        <p class = "card2Description">Character designs, illustrations, and concept art based on Dungeons and Dragons campaigns</p>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
         <script src="index.js"></script>
     </body>
 </html>
