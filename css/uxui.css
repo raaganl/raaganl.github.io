@@ -1,23 +1,25 @@
 .uxCardFlexBox{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
+    
 
 }
 .uxCard{
     background-color: rgba(81, 98, 214, 1);
-    width: 400px;
-    height: 500px;
-    margin-bottom: 5%;
+    max-width: 350px;
+    max-height: 450px;
+    min-width: 200px;
+    min-height: auto;
     transition: 0.5s;
+    margin:5%;
 }
 .uxCard:hover{
     background-color: rgba(81, 98, 214, 1);
-    width: 405px;
-    height: 505px;
+    transform: scale(1.05);
     .uxCardImg{
         opacity: 1;
     }
@@ -36,7 +38,7 @@
     padding:2%;
 }
 .uxCardImg{
-    opacity: .7;
+    opacity: .9;
     object-fit:cover;
     width: 100%;
     height: 70%;
@@ -44,14 +46,14 @@
 }
 .uxCardHeader{
     color:#edeeff;
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
     transition-delay: .2s;
 }
 .uxCardDescription{
     color:#edeeff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
     display: block;
     opacity: 0;
@@ -69,8 +71,10 @@
   margin-bottom: 10%;
 }
 .uxProjectDescription{
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    background-color: rgba(81, 98, 214, .9);
 }
 
 .uxMockupContainer{
@@ -96,4 +100,45 @@
 }
 .whiteboardImage{
     width: 500px;
+}
+@media only screen and (max-width: 800px){
+    .uxCard:hover{
+        .uxCardHeader{
+            color:#edeeff;
+            font-size: 1.1rem;
+        }
+        .uxCardDescription{
+            display:block;
+            opacity: 1; 
+            visibility: visible;
+            transition: opacity 0.5s ease-in-out, visibility 0s 0s;
+        }
+    }
+    .uxCardHeader{
+        color:#edeeff;
+        font-size: 1.1rem;
+    }
+    .uxCardDescription{
+        color:#edeeff;
+        font-size: .9rem;
+        
+    }
+    .orionImage{
+        width:250px;
+    }
+    .whiteboardImage{
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .orionImage{
+        width:250px;
+    }
+    .whiteboardImage{
+        width: 300px;
+    }
+
 }

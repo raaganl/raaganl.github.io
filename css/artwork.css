@@ -2,8 +2,9 @@
 .card2{
     position: relative;
     background-color: rgba(81, 98, 214, .50);
-    width: 1000px;
-    height: 400px;
+    max-width: 1000px;
+    max-height: 400px;
+    min-width: 350px;
     margin-bottom: 5%;
     transition-timing-function: ease-in-out;
     transition-duration: .5s;
@@ -11,8 +12,7 @@
 }
 .card2:hover{
     background-color: rgba(81, 98, 214, .50);
-    width: 1005px;
-    height: 405px;
+    transform: scale(1.05);
     .card2TextContainer{
         background-color:rgba(81, 98, 214, .50);
     }
@@ -32,12 +32,11 @@
 }
 .card2TextContainer{
     padding:1%;
-    width:500px;
+    width:400px;
     position: absolute;
     top: 10px;;
     left:10px;
     transition: .5s ease;
-
 
 }
 .card2Img{
@@ -138,4 +137,75 @@
     margin-top: -20px;
 }
 
+@media only screen and (max-width: 1000px){
+    .card2FlexBox{
+        margin-left: 2%;
+        margin-right: 2%;
+    
+    }
+    
+    .card2Header{
+        color:#edeeff;
+        font-size: 1.3rem;
+    }
+    .card2Description{
+        font-size: 1.1rem; 
+    }
+    .card2TextContainer{
+        padding:1%;
+        width:300px;
+    
+    }
+    .card2:hover{
+        background-color: rgba(81, 98, 214, .50);
+        transform: scale(1.05);
+        .card2TextContainer{
+            background-color:rgba(81, 98, 214, .50);
+        }
+        .card2Header{
+            color:#edeeff;
+            font-size: 1.3rem;
+        }
+        .card2Description{
+            color:#edeeff;
+            font-size: 1.1rem;
+            display:block;
+            opacity: 1; 
+            visibility: visible;
+            transition: opacity 0.5s ease-in-out, visibility 0s 0s;
+            
+        }
+    }
 
+}
+@media only screen and (max-width: 800px){
+    
+    .card2Header{
+        color:#edeeff;
+        font-size: 1.2rem;
+    }
+    .card2Description{
+        font-size: .8rem; 
+    }
+    .card2:hover{
+        background-color: rgba(81, 98, 214, .50);
+        transform: scale(1.05);
+        .card2TextContainer{
+            background-color:rgba(81, 98, 214, .50);
+        }
+        .card2Header{
+            color:#edeeff;
+            font-size: 1.2rem;
+        }
+        .card2Description{
+            color:#edeeff;
+            font-size: .8rem;
+            display:block;
+            opacity: 1; 
+            visibility: visible;
+            transition: opacity 0.5s ease-in-out, visibility 0s 0s;
+            
+        }
+    }
+
+}
