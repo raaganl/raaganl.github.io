@@ -10,7 +10,7 @@ body{
     margin-top: 1%;
     margin-left: 0%;
     margin-right: 0%;
-    background-color: #2D313D;
+    background-color: #1a1b28;
     color:#edeeff;
     letter-spacing: .05rem;
 }
@@ -115,7 +115,7 @@ a:hover{
     border-radius: 30px;
     text-align: center;
     margin-left: 5%;
-    margin-top:10%;
+    margin-top:130px;
     font-size: 1.5rem;
     background-color:#edeeff;
     color:rgba(81, 98, 214, 1);
@@ -141,12 +141,16 @@ a:hover{
     text-align: center;
     padding-left: 1%;
     padding-right: 1%;
-    margin-top: -3rem;
+    margin-top: -30px;
     font-size: 1.8rem;
     color:#c3c6ff;
     max-width: fit-content;
 }
 @media only screen and (max-width: 1000px){
+    .pageHeading{
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+    }
     .headBar{
         margin-right: 2%;
         margin-left: 2%;
@@ -174,6 +178,27 @@ a:hover{
     
 }
 @media only screen and (max-width: 800px){
+    .Back{
+        margin-top:100px;
+    }
+    .pageHeading{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    .pageHeading2{
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+    h1{
+        font-weight: lighter;
+        font-size: 1.2rem;
+    }
+    
+    p{
+        font-weight:lighter;
+        font-size: .9rem;
+    }
     .headBar{
         margin-right: 2%;
         margin-left: 2%;
@@ -194,7 +219,7 @@ a:hover{
         text-align: center;
         padding-bottom:1rem;
         a{
-            font-size: 1.5rem;
+            font-size: 1.1rem;
 
         }
     }
@@ -214,11 +239,6 @@ a:hover{
         a:hover{
             color:#edeeff;
             transform: scale(1.1);
-        }
-    }
-    .navbarPC{
-        a{
-            font-size: 1.2rem;
         }
     }
     #bluebellBackground{
@@ -245,11 +265,6 @@ a:hover{
         a:hover{
             color:#edeeff;
             transform: scale(1.1);
-        }
-    }
-    .navbarPC{
-        a{
-            font-size: 1.2rem;
         }
     }
    

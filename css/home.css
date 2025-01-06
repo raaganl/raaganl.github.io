@@ -77,8 +77,8 @@
 }
 @media only screen and (max-width: 600px){
     #headshotRagan{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     #introBlurb{
         max-width: 350px;
